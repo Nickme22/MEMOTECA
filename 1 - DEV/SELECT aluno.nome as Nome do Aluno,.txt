@@ -1,0 +1,47 @@
+Nesta aula, aprendemos:
+
+Como funciona a chave primária
+Como funciona os campos que aceitam NULL e que não aceitam NULL (NOT NULL)
+Como funciona um campo UNIQUE
+Como criar uma chave primária
+Como funciona a chave estrangeira
+Como criar uma chave estrangeira
+Como criar consultas com relacionamentos
+INNER JOIN
+LEFT JOIN
+RIGHT JOIN
+FULL JOIN
+CROSS JOIN
+
+
+
+SELECT aluno.nome as "Nome do Aluno",
+        curso.nome as "Nome do Curso"
+    FROM aluno
+    JOIN aluno_curso ON aluno_curso.aluno_id = aluno.id
+    JOIN curso ON curso.id = aluno_curso.curso_id
+
+-
+
+SELECT aluno.nome as "Nome do Aluno",
+        curso.nome as "Nome do Curso"
+    FROM aluno
+LEFT JOIN aluno_curso ON aluno_curso.aluno_id = aluno.id
+LEFT JOIN curso ON curso.id = aluno_curso.curso_id
+
+-
+
+SELECT aluno.nome as "Nome do Aluno",
+        curso.nome as "Nome do Curso"
+    FROM aluno
+FULL JOIN aluno_curso ON aluno_curso.aluno_id = aluno.id
+FULL JOIN curso ON curso.id = aluno_curso.curso_id
+
+-
+
+SELECT aluno.nome as "Nome do Aluno",
+       curso.nome as "Nome do Curso"
+    FROM aluno
+CROSS JOIN curso
+
+

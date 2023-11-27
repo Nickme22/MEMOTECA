@@ -1,0 +1,59 @@
+RESPONSIVE VOICE PARA COLOCAR VOS NAS LEITURAS DAS PG
+
+:focus: é aplicada quando um elemento está em foco, pode ser pelo clique do mouse ou seleção pelo teclado. Um exemplo é quando os campos de escrita em formulários estão selecionados para o usuário escrever.
+
+:hover: detecta quando um usuário está com o mouse em cima do elemento, sem necessariamente estar clicando.
+
+:active: detecta quando o elemento está ativo, quando há uma interação, por exemplo: o link <a> está sendo clicado.
+
+:visited: detecta quando o link <a> já foi visitado, ou seja, se você já clicou anteriormente naquele link.
+
+:link: detecta quando é um link <a> que nunca foi clicado antes.
+
+
+
+ps -ef | grep top
+
+killall top
+killall -9 top
+
+
+apt-get install
+apt-get remove
+
+sudo apt-get install ssh
+
+baixar oh my zsh
+
+
+- docker
+
+-dockerfile dentro do projeto
+Colocando versões -
+
+FROM node:14 
+WORKDIR /app-node
+ARG PORT=6000
+ENV PORT=$PORT
+EXPOSE $PORT_BUILD
+COPY . .
+RUN npm install
+ENTRYPOINT npm start
+
+
+DOCKERHUB - CRIAR CONTA....
+
+docker login -u usuario
+Password
+
+
+Docker images
+Docker push nome....
+
+	
+Docker bild -t nome/app-node:1.0 . 
+
+Dockerfile reference .... Principais instruções...
+
+
+<canvas>
